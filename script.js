@@ -17,7 +17,7 @@ for (var i = 1; i <= 12; i++) {
 }
 
 // Fetch ONCE and process all categories
-fetch('/data/filelist.json')
+fetch('data/filelist.json')
   .then(res => {
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     return res.json();
